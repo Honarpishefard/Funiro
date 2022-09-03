@@ -1,0 +1,31 @@
+@import url(./util.css);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-bg {
+    background: #FCF8F3;
+}
+
+.search-bar::placeholder {
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.header-sm-bg {
+    background: #F9F1E7;
+    width: 60%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 11px !important;
+    height: 11px !important;
+    border-radius: 50% !important;
+    background: #D8D8D8 !important;
+    border: none !important;
+}
+
+.carousel-indicators .active {
+    background: #E89F71 !important;
+}
