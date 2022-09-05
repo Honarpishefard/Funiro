@@ -1,47 +1,66 @@
 :root {
     --primary-color: #E89F71;
+    --secondary-color: #FCF8F3;
+    --gray-color: #898989;
 }
 
-.fs-18{
+.fs-18 {
     font-size: 1.125rem;
 }
 
-.fs-24{
+.fs-24 {
     font-size: 1.5rem;
 }
 
-.fs-36{
+.fs-36 {
     font-size: 2.25rem;
 }
 
-.fw-500{
+.fw-500 {
     font-weight: 500;
 }
 
-.gap-6{
+.gap-2rem {
+    gap: 2rem;
+}
+
+.gap-6 {
     gap: 4rem;
 }
 
-.ps-6{
+.ps-6 {
     padding-left: 6rem;
 }
 
-.mt-6{
+.px-6{
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+}
+
+.mt-6 {
     margin-top: 5.5rem;
 }
 
-.w-40{
+.w-40 {
     width: 40%;
 }
 
-.w-30{
+.w-30 {
     width: 30%;
 }
 
-.cs-primary-bg{
+.cs-primary-bg {
     background-color: var(--primary-color);
 }
 
-.cursor-pointer{
+.cs-secondary-bg {
+    background-color: var(--secondary-color);
+}
+
+.gray-text {
+    color: var(--gray-color);
+}
+
+.cursor-pointer {
     cursor: pointer;
 }
