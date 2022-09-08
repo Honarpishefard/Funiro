@@ -51,12 +51,24 @@
     margin-left: 5.5rem;
 }
 
+.w-60 {
+    width: 60%;
+}
+
 .w-40 {
     width: 40%;
 }
 
 .w-30 {
     width: 30%;
+}
+
+.w-webkit {
+    width: -webkit-fill-available;
+}
+
+.h-fit-content {
+    height: fit-content;
 }
 
 .cs-primary-bg {
@@ -77,4 +89,8 @@
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.left-20-negetive {
+    left: -20px;
 }
