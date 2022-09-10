@@ -1,0 +1,17 @@
+@import url(./util.css);
+
+:root {
+    --primary-color: #D4AF8C;
+    --secondary-color: #FCF8F3;
+    --gray-color: #898989;
+    --black-color: #3A3A3A;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+input::placeholder {
+    font-size: 1.125rem;
+    font-weight: 500;
+}

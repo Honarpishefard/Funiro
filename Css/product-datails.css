@@ -34,6 +34,8 @@ body {
     padding: 0 .8rem;
 }
 
-.product-sec-container img{
-    width: 270px;
+.wishlist{
+    width: fit-content;
+    border: 1px solid;
+    border-color: var(--black-color);
 }

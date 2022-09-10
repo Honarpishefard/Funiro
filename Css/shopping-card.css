@@ -20,20 +20,15 @@ body {
     font-size: 1.125rem;
 }
 
-.footer-top-border {
-    border-top: 2px solid #D8D8D8;
+.product_img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
 }
 
-.email-input-footer{
-    background-color: #F4F5F7;
-    border: 0;
-}
-
-.email-img-footer{
-    background-color: var(--primary-color);
-    padding: 0 .8rem;
-}
-
-.product-sec-container img{
-    width: 270px;
+.wishlist{
+    width: fit-content;
+    border: 1px solid;
+    border-color: var(--black-color);
 }
