@@ -13,13 +13,13 @@ const Bathroom = document.getElementById("Bathroom");
 export default function productListHandler() {
     document.body.id = "bathroomProducts";
     bathroomProductsHandler();
-
-
+    
+    
     function catagorieIdentifier() {
         Bathroom.addEventListener("click", () => {
             document.body.id = "bathroomProducts";
             productSecContainer.innerHTML = '';
-            productSecContainer.innerHTML = `<div class="spinner-border d-flex m-auto" style="color: #E89F71;" role="status">
+            productSecContainer.innerHTML = `<div class="spinner-border d-flex m-auto" style="color: #D4AF8C;" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>`;
             setTimeout(() => {
@@ -31,7 +31,7 @@ export default function productListHandler() {
         Bedroom.addEventListener("click", () => {
             document.body.id = "bedroomProducts";
             productSecContainer.innerHTML = '';
-            productSecContainer.innerHTML = `<div class="spinner-border d-flex m-auto" style="color: #E89F71;" role="status">
+            productSecContainer.innerHTML = `<div class="spinner-border d-flex m-auto" style="color: #D4AF8C;" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>`;
             setTimeout(() => {
@@ -43,7 +43,7 @@ export default function productListHandler() {
         Lighting.addEventListener("click", () => {
             document.body.id = "lightingProducts";
             productSecContainer.innerHTML = '';
-            productSecContainer.innerHTML = `<div class="spinner-border d-flex m-auto" style="color: #E89F71;" role="status">
+            productSecContainer.innerHTML = `<div class="spinner-border d-flex m-auto" style="color: #D4AF8C;" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>`;
             setTimeout(() => {
@@ -55,7 +55,7 @@ export default function productListHandler() {
         Decorative.addEventListener("click", () => {
             document.body.id = "decorativeProducts";
             productSecContainer.innerHTML = '';
-            productSecContainer.innerHTML = `<div class="spinner-border d-flex m-auto" style="color: #E89F71;" role="status">
+            productSecContainer.innerHTML = `<div class="spinner-border d-flex m-auto" style="color: #D4AF8C;" role="status">
             <span class="visually-hidden">Loading...</span>
           </div>`;
             setTimeout(() => {
