@@ -20,6 +20,14 @@ body {
     font-size: 1.125rem;
 }
 
+.logo {
+    transition: all .3s ease;
+}
+
+.header-products-sec {
+    transition: all .3s ease;
+}
+
 .product_img {
     width: 200px;
     height: 200px;

@@ -25,6 +25,14 @@ body {
     width: 60%;
 }
 
+.logo {
+    transition: all .3s ease;
+}
+
+.header-products-sec {
+    transition: all .3s ease;
+}
+
 .carousel-indicators [data-bs-target] {
     width: 11px !important;
     height: 11px !important;
@@ -126,12 +134,12 @@ body {
     border-top: 2px solid #D8D8D8;
 }
 
-.email-input-footer{
+.email-input-footer {
     background-color: #F4F5F7;
     border: 0;
 }
 
-.email-img-footer{
+.email-img-footer {
     background-color: var(--primary-color);
     padding: 0 .8rem;
 }

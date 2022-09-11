@@ -20,6 +20,14 @@ body {
     font-size: 1.125rem;
 }
 
+.logo {
+    transition: all .3s ease;
+}
+
+.header-products-sec {
+    transition: all .3s ease;
+}
+
 .footer-top-border {
     border-top: 2px solid #D8D8D8;
 }
