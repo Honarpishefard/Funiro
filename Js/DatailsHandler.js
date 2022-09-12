@@ -2,10 +2,14 @@ import bathroomProductsSource from "./DataBase/bathroomProductsDataBase.js";
 import bedroomProductsSource from "./DataBase/bedroomProductsDataBase.js";
 import lightingProductsSource from "./DataBase/lightingDataBase.js";
 import decorativeProductsSource from "./DataBase/decorativeProductsDataBase.js";
+import quantityHandler from "./utils/quantityHandler.js";
+
 
 const productImage = document.getElementById("productImage");
 const productTittle = document.getElementById("productTittle");
 const ProductPrice = document.getElementById("ProductPrice");
+const addToCard = document.getElementById("addToCard");
+
 
 export default function DatailsPageHandler() {
     let clickedLc = localStorage.getItem("clickedOn");
@@ -29,5 +33,15 @@ export default function DatailsPageHandler() {
     productTittle.innerHTML = chosenProduct.name;
     ProductPrice.innerHTML = chosenProduct.price;
     productImage.src = chosenProduct.cover;
-    productImage.style.width = "375px";
+    productImage.style.width = "400px";
+
+
+    quantityHandler();
+
+    addToCard.addEventListener("click", () => {
+        console.log("added to card");
+        console.log(chosenProduct);
+        localStorage.setItem("addProductToCard", JSON.stringify(chosenProduct));
+    });
+
 };
