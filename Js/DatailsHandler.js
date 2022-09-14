@@ -31,17 +31,29 @@ export default function DatailsPageHandler() {
     }
 
     productTittle.innerHTML = chosenProduct.name;
-    ProductPrice.innerHTML = chosenProduct.price;
+    ProductPrice.innerHTML = chosenProduct.price + " " + "USD";
     productImage.src = chosenProduct.cover;
     productImage.style.width = "400px";
 
 
     quantityHandler();
 
-    addToCard.addEventListener("click", () => {
-        console.log("added to card");
-        console.log(chosenProduct);
-        localStorage.setItem("addProductToCard", JSON.stringify(chosenProduct));
-    });
 
+    function addToCardFn() {
+        const lcCheck = JSON.parse(localStorage.getItem("card"));
+console.log(lc);
+
+// if()
+
+
+        if (lcCheck) {
+            const list = lcCheck;
+            const merge = [...list, chosenProduct];
+            localStorage.setItem("card", JSON.stringify(merge));
+        } else {
+            localStorage.setItem("card", JSON.stringify([chosenProduct]));
+        };
+    };
+
+    addToCard.addEventListener("click", addToCardFn);
 };

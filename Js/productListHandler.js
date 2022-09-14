@@ -62,7 +62,7 @@ export default function productListHandler() {
                 productSecContainer.innerHTML = '';
                 decorativeProductsHandler();
             }, 2000)
-        })
-    }
+        });
+    };
     catagorieIdentifier();
-}
+};
