@@ -15,16 +15,16 @@ export default function bedroomProductsSource() {
 
         {
             id: 3,
-            name: "LONG ACACIA BENCH",
-            price: "299.00",
-            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/bedroom/LONG ACACIA BENCH.jpg",
+            name: "FADED LINEN SHEETS",
+            price: "159.00",
+            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/bedroom/FADED LINEN SHEETS.jpg",
         },
 
         {
             id: 4,
-            name: "FADED LINEN SHEETS",
-            price: "159.00",
-            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/bedroom/FADED LINEN SHEETS.jpg",
+            name: "LONG ACACIA BENCH",
+            price: "299.00",
+            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/bedroom/LONG ACACIA BENCH.jpg",
         },
 
         {

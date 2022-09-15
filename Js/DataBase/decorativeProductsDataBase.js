@@ -1,23 +1,23 @@
 export default function decorativeProductsSource() {
     return [{
             id: 1,
-            name: "FAUX SHEARLING CHAIR",
-            price: "349.00",
-            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/decor/FAUX SHEARLING CHAIR.jpg",
+            name: "BRASS AND GLASS LANTERN",
+            price: "119.00",
+            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/decor/BRASS AND GLASS LANTERN.jpg",
         },
 
         {
             id: 2,
-            name: "VINTAGE-EFFECT RUG",
-            price: "269.00",
-            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/decor/VINTAGE-EFFECT RUG.jpg",
+            name: "GOLD PLANTER",
+            price: "99.99",
+            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/decor/GOLD PLANTER.jpg",
         },
 
         {
             id: 3,
-            name: "WOODEN AND METAL SWIVEL STOOL",
-            price: "159.00",
-            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/decor/WOODEN AND METAL SWIVEL STOOL.jpg",
+            name: "LARGE IRREGULAR MIRROR",
+            price: "199.00",
+            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/decor/LARGE IRREGULAR MIRROR.jpg",
         },
 
         {
@@ -43,23 +43,23 @@ export default function decorativeProductsSource() {
 
         {
             id: 7,
-            name: "BRASS AND GLASS LANTERN",
-            price: "119.00",
-            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/decor/BRASS AND GLASS LANTERN.jpg",
+            name: "FAUX SHEARLING CHAIR",
+            price: "349.00",
+            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/decor/FAUX SHEARLING CHAIR.jpg",
         },
 
         {
             id: 8,
-            name: "GOLD PLANTER",
-            price: "99.99",
-            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/decor/GOLD PLANTER.jpg",
+            name: "VINTAGE-EFFECT RUG",
+            price: "269.00",
+            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/decor/VINTAGE-EFFECT RUG.jpg",
         },
 
         {
             id: 9,
-            name: "LARGE IRREGULAR MIRROR",
-            price: "199.00",
-            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/decor/LARGE IRREGULAR MIRROR.jpg",
+            name: "WOODEN AND METAL SWIVEL STOOL",
+            price: "159.00",
+            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/decor/WOODEN AND METAL SWIVEL STOOL.jpg",
         },
 
         {

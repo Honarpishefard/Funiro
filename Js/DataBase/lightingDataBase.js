@@ -15,9 +15,9 @@ export default function lightingProductsSource() {
 
         {
             id: 3,
-            name: "SMALL CERAMIC BASE LAMP",
-            price: "69.90",
-            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/lightng/SMALL CERAMIC BASE LAMP.jpg",
+            name: "IRON GARLAND",
+            price: "49.90",
+            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/lightng/IRON GARLAND.jpg",
         },
 
         {
@@ -29,9 +29,9 @@ export default function lightingProductsSource() {
 
         {
             id: 5,
-            name: "IRON GARLAND",
-            price: "49.90",
-            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/lightng/IRON GARLAND.jpg",
+            name: "SMALL CERAMIC BASE LAMP",
+            price: "69.90",
+            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/lightng/SMALL CERAMIC BASE LAMP.jpg",
         },
 
         {

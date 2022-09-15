@@ -1,9 +1,9 @@
 export default function bathroomProductsSource() {
     return [{
             id: 1,
-            name: "RESIN BATHROOM SET",
-            price: "9.90",
-            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/bathroom/RESIN BATHROOM SET.jpg",
+            name: "PREMIUM QUALITY COTTON TOWEL",
+            price: "49.90",
+            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/bathroom/PREMIUM QUALITY COTTON TOWEL.jpg",
         },
 
         {
@@ -29,9 +29,9 @@ export default function bathroomProductsSource() {
 
         {
             id: 5,
-            name: "PREMIUM QUALITY COTTON TOWEL",
-            price: "49.90",
-            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/bathroom/PREMIUM QUALITY COTTON TOWEL.jpg",
+            name: "RESIN BATHROOM SET",
+            price: "9.90",
+            cover: document.createElement("img").src = "./../Img/product-list-page/catagories/bathroom/RESIN BATHROOM SET.jpg",
         },
 
         {
