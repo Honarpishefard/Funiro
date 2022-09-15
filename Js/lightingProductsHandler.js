@@ -5,6 +5,7 @@ import chosenProduct from "./productDetailsHandler.js";
 const lightingSecContainer = document.querySelector(".product-sec-container");
 
 export default function bathroomProductsHandler() {
+    localStorage.setItem("page" , "lighting");
     lightingProductsSource().forEach((item)=>{
         const product = `<div style="width: min-content;" id="${item.id}"> 
         <img src="${item.cover}" alt="">

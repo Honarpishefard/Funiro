@@ -29,7 +29,7 @@ export default function cardHandler() {
           </div>
       </div>
       <div class="d-flex align-items-center gap-3">
-        <p class="mb-0 fw-500 fs-36 pe-3 black-text flex-grow-1">${(item.price)*quantity} ${"USD"}</p>
+        <p class="mb-0 fw-500 fs-36 pe-3 black-text flex-grow-1">${((item.price)*quantity).toFixed(2)} ${"USD"}</p>
         <img class="wishlist px-2 py-1" src="./../Img/shopping-card/Trash Bin.svg" alt="">
         <p class="mb-0 fw-semibold fs-6 wishlist px-2 py-1 black-text cursor-pointer">Add to
             Wishlist</p>

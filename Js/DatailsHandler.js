@@ -28,7 +28,7 @@ export default function DatailsPageHandler() {
         case "decorativeProducts":
             chosenProduct = decorativeProductsSource().filter(item => item.id === parseInt(clickedLc))[0];
             break;
-    }
+    };
 
     productTittle.innerHTML = chosenProduct.name;
     ProductPrice.innerHTML = chosenProduct.price + " " + "USD";
@@ -41,10 +41,6 @@ export default function DatailsPageHandler() {
 
     function addToCardFn() {
         const lcCheck = JSON.parse(localStorage.getItem("card"));
-console.log(lc);
-
-// if()
-
 
         if (lcCheck) {
             const list = lcCheck;

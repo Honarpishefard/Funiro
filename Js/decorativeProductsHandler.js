@@ -5,6 +5,7 @@ import chosenProduct from "./productDetailsHandler.js";
 const decorSecContainer = document.querySelector(".product-sec-container");
 
 export default function decorativeProductsHandler() {
+    localStorage.setItem("page" , "decor");
     decorativeProductsSource().forEach((item)=>{
         const product = `<div style="width: min-content;" id="${item.id}"> 
         <img src="${item.cover}" alt="">
