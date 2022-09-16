@@ -9,7 +9,7 @@ export default function decorativeProductsSource() {
         {
             id: 2,
             name: "GOLD PLANTER",
-            price: "99.99",
+            price: "96.90",
             cover: document.createElement("img").src = "./../Img/product-list-page/catagories/decor/GOLD PLANTER.jpg",
         },
 
