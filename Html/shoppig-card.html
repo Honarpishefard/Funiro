@@ -63,8 +63,8 @@
                     <div class="bg-white p-5">
                         <p class="fw-bold fs-24 black-text">Have a Coupon?</p>
                         <div class="d-flex gap-3">
-                            <input class="ps-2 py-1 flex-grow-1" type="text" placeholder="Enter Your Code Here">
-                            <button class="p-4 py-1 border-0 cs-primary-bg black-text fw-semibold"
+                            <input id="couponInput" class="ps-2 py-1 flex-grow-1" type="text" placeholder="Enter Your Code Here">
+                            <button id="applyCouponBttn" class="p-4 py-1 border-0 cs-primary-bg black-text fw-semibold"
                                 type="submit">Apply</button>
                         </div>
                     </div>
@@ -77,9 +77,9 @@
                                 <p class="fw-bold fs-6">Total</p>
                             </div>
                             <div class="black-text">
-                                <p class="fw-semibold fs-6">$150</p>
-                                <p class="fw-semibold fs-6">Free Shipping</p>
-                                <p class="fw-semibold fs-6">$350</p>
+                                <p id="Subtotal" class="fw-semibold fs-6">$00</p>
+                                <p class="fw-semibold fs-6">$ <span id="Shipping">25.94</span></p>
+                                <p class="fw-semibold fs-6">$ <span id="Total">350</span></p>
                             </div>
                         </div>
                         <button
