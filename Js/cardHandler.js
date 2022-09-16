@@ -1,8 +1,10 @@
-import quantityHandler from "./utils/quantityHandler.js";
 
 const cardContainer = document.querySelector(".card-container");
-
-
+const couponInput = document.getElementById("couponInput");
+const applyCouponBttn = document.getElementById("applyCouponBttn");
+const Subtotal = document.getElementById("Subtotal");
+const Shipping = document.getElementById("Shipping");
+const Total = document.getElementById("Total");
 
 
 export default function cardHandler() {
@@ -36,9 +38,9 @@ export default function cardHandler() {
       </div>
    </div>
    </div>`
-
         cardContainer.innerHTML += el;
     });
+
 
 
     cardContainer.addEventListener("click", (e) => {
@@ -52,6 +54,29 @@ export default function cardHandler() {
                 console.log(parseInt(element.id));
             });
             console.log(filtered);
+        };
+    });
+
+    const lcPriceCheck = JSON.parse(localStorage.getItem("price"));
+
+
+
+    const sum = lcPriceCheck.reduce(function (a, b) {
+        return a + b;
+    }, 0);
+
+    Subtotal.innerHTML = "$" + " " + sum;
+
+
+    Total.innerHTML =  sum + Number(Shipping.innerHTML);
+
+    applyCouponBttn.addEventListener("click", () => {
+        if (couponInput.value === "BLACKFRIDAY") {
+            console.log("ok");
+
+
+        } else {
+            alert("please enter a valid coupon code");
         };
     });
 

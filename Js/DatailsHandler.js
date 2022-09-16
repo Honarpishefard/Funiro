@@ -40,14 +40,23 @@ export default function DatailsPageHandler() {
 
 
     function addToCardFn() {
-        const lcCheck = JSON.parse(localStorage.getItem("card"));
+        const lcCardCheck = JSON.parse(localStorage.getItem("card"));
+        const lcPriceCheck = JSON.parse(localStorage.getItem("price"));
 
-        if (lcCheck) {
-            const list = lcCheck;
-            const merge = [...list, chosenProduct];
+        if (lcCardCheck) {
+            const merge = [...lcCardCheck, chosenProduct];
             localStorage.setItem("card", JSON.stringify(merge));
         } else {
             localStorage.setItem("card", JSON.stringify([chosenProduct]));
+        };
+
+
+        const num = Number((chosenProduct.price)*(Number(quantity.innerHTML)));
+        if (lcPriceCheck) {
+            const merge = [...lcPriceCheck, num];
+            localStorage.setItem("price", JSON.stringify(merge));
+        } else {
+            localStorage.setItem("price", JSON.stringify([num]));
         };
     };
 
