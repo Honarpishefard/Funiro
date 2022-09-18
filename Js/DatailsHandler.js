@@ -43,7 +43,11 @@ export default function DatailsPageHandler() {
         const lcCardCheck = JSON.parse(localStorage.getItem("card"));
         const lcPriceCheck = JSON.parse(localStorage.getItem("price"));
 
+
         if (lcCardCheck) {
+            const searchIndex = lcCardCheck.findIndex((item) => item.id == chosenProduct.id);
+            if (searchIndex !== -1) return alert("This Item is Already Added To Your Card");
+            
             const merge = [...lcCardCheck, chosenProduct];
             localStorage.setItem("card", JSON.stringify(merge));
         } else {
@@ -51,7 +55,7 @@ export default function DatailsPageHandler() {
         };
 
 
-        const num = Number((chosenProduct.price)*(Number(quantity.innerHTML)));
+        const num = Number((chosenProduct.price) * (Number(quantity.innerHTML)));
         if (lcPriceCheck) {
             const merge = [...lcPriceCheck, num];
             localStorage.setItem("price", JSON.stringify(merge));
