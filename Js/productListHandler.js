@@ -15,6 +15,7 @@ const sortByPrice = document.getElementById("sortByPrice");
 const switchPriceSort = document.getElementById("switchPriceSort");
 
 export default function productListHandler() {
+    
     document.body.id = "bathroomProducts";
     bathroomProductsHandler();
     

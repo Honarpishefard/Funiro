@@ -117,6 +117,4 @@ export default function DatailsPageHandler() {
         relatedProductsDiv.innerHTML += el;
     });
 
-
-
 };
