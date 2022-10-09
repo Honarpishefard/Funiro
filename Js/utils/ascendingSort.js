@@ -1,9 +1,8 @@
-import bathroomProductsSource from "../DataBase/bathroomProductsDataBase.js";
-import bedroomProductsSource from "../DataBase/bedroomProductsDataBase.js";
-import lightingProductsSource from "../DataBase/lightingDataBase.js";
-import decorativeProductsSource from "../DataBase/decorativeProductsDataBase.js";
-
-
+import bathroomProductsSource from "./../DataBase/bathroomProductsDataBase.js";
+import bedroomProductsSource from "./../DataBase/bedroomProductsDataBase.js";
+import lightingProductsSource from "./../DataBase/lightingDataBase.js";
+import decorativeProductsSource from "./../DataBase/decorativeProductsDataBase.js";
+import catagorieIdentifier from "./../productDetailsHandler.js"
 
 
 const productSecContainer = document.querySelector(".product-sec-container");
@@ -13,6 +12,25 @@ const switchPriceSort = document.getElementById("switchPriceSort");
 
 
 export default function sortByPriceAscending() {
+
+
+    function ascendingsort() {
+        switchPriceSort.style.display = "flex";
+        productSecContainer.innerHTML = '';
+        const order = document.createElement("p");
+        order.style.width = "100%";
+        order.innerHTML = `By Ascending Order`;
+        productSecContainer.appendChild(order);
+        sorted.forEach((item) => {
+            const product = `<div style="width: min-content;" id="${item.id}"> 
+            <img src="${item.cover}" alt="">
+            <p class="mb-0 mt-2 fw-500 fs-18 ps-1">${item.name}</p>
+            <p class="mb-0 mt-1 fw-light fs-6 ps-1">${item.price} ${"USD"}</p>
+            </div>`
+            productSecContainer.innerHTML += product;
+        });
+        catagorieIdentifier();
+    };
 
     let sorted = null;
     switch (localStorage.getItem("page")) {
@@ -40,7 +58,6 @@ export default function sortByPriceAscending() {
                 productSecContainer.innerHTML = '';
                 ascendingsort();
             }, 2000);
-
             break;
 
         case "bedroom":
@@ -54,7 +71,6 @@ export default function sortByPriceAscending() {
                 productSecContainer.innerHTML = '';
                 ascendingsort();
             }, 2000);
-
             break;
 
         case "decor":
@@ -68,24 +84,7 @@ export default function sortByPriceAscending() {
                 productSecContainer.innerHTML = '';
                 ascendingsort();
             }, 2000);
-
             break;
     };
 
-    function ascendingsort() {
-        switchPriceSort.style.display = "flex";
-        productSecContainer.innerHTML = '';
-        const test = document.createElement("p");
-        test.style.width = "100%";
-        test.innerHTML = `By Ascending Order`;
-        productSecContainer.appendChild(test);
-        sorted.forEach((item) => {
-            const product = `<div style="width: min-content;" id="${item.id}"> 
-            <img src="${item.cover}" alt="">
-            <p class="mb-0 mt-2 fw-500 fs-18 ps-1">${item.name}</p>
-            <p class="mb-0 mt-1 fw-light fs-6 ps-1">${item.price} ${"USD"}</p>
-            </div>`
-            productSecContainer.innerHTML += product;
-        });
-    };
 };

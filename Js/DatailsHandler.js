@@ -113,7 +113,6 @@ export default function DatailsPageHandler() {
     <p class="mb-0 mt-2 fw-500 fs-18 ps-1">${item.name}</p>
     <p class="mb-0 mt-1 fw-light fs-6 ps-1">${item.price}</p>
     </div>`;
-
         relatedProductsDiv.innerHTML += el;
     });
 
