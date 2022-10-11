@@ -17,40 +17,55 @@
     <title>Funiro. | Sign Up</title>
 </head>
 
-<body id="logIn">
-    <header></header>
-    <main class="cs-secondary-bg vh-100 d-flex">
+<body id="octavalidate_demo_page">
+    <main class="cs-secondary-bg vh-100 d-flex form-section">
         <div class="container d-flex flex-column align-items-center justify-content-center gap-4">
             <p class="display-5 fw-bold">Funiro | Sign Up</p>
-            <div class="d-flex flex-column w-50 gap-3">
-                <label for="Email" class="fs-18 fw-semibold">Enter Your Email</label>
-                <input id="Email" type="email" placeholder="Email" class="px-2 py-1">
-            </div>
-            <div class="d-flex flex-column w-50 gap-3">
-                <label for="username" class="fs-18 fw-semibold">Choose a Username</label>
-                <input id="username" type="text" placeholder="username" class="px-2 py-1">
-            </div>
-            <div class="d-flex flex-column w-50 gap-3">
-                <label for="password" class="fs-18 fw-semibold">Enter a Password</label>
-                <input id="password" type="password" placeholder="password" class="px-2 py-1">
-            </div>
-            <div class="d-flex flex-column w-50 gap-3">
-                <label for="repeatPassword" class="fs-18 fw-semibold">Repeat Password</label>
-                <input id="repeatPassword" type="password" placeholder="password" class="px-2 py-1">
-            </div>
-            <button type="submit" class="cs-primary-bg border-0 fw-semibold black-text fs-18 px-4 py-2 mt-2">Sign Up</button>
-            <div class="text-center">
-                <p class="mt-2">Already have an account? <a href="./log-in.html">Log In</a></p>
-            </div>
+            <form class="w-100 d-flex flex-column align-items-center gap-4" id="form_demo" novalidate>
+                <div class="d-flex flex-column w-50 gap-3 form-group">
+                    <label for="Email" class="fs-18 fw-semibold">Enter Your Email <span
+                            style="color:#ff0000">*</span></label>
+                    <input type="text" class="px-2 py-1" ov-required:msg="Your Email Address is required"
+                        id="inp_reg_email" octavalidate="R,EMAIL" placeholder="Your Email Address">
+                </div>
+                <div class="d-flex flex-column w-50 gap-3 form-group">
+                    <label for="username" class="fs-18 fw-semibold">Choose a Username <span
+                            style="color:#ff0000">*</span></label>
+                    <input type="text" class="px-2 py-1" id="inp_uname" octavalidate="R,USERNAME"
+                        ov-required:msg="Your username is required" ov-username:msg="Please enter a valid username"
+                        placeholder="Your username" length="5">
+                </div>
+                <div class="d-flex flex-column w-50 gap-3 form-group">
+                    <label for="password" class="fs-18 fw-semibold">Enter a Password <span
+                            style="color:#ff0000">*</span></label>
+                    <input type="password" class="px-2 py-1" id="inp_reg_pwd" octavalidate="R,PASS"
+                        ov-required:msg="Your password is required" placeholder="Your Password">
+                </div>
+                <div class="d-flex flex-column w-50 gap-3 form-group">
+                    <label for="repeatPassword" class="fs-18 fw-semibold">Repeat Password <span
+                            style="color:#ff0000">*</span></label>
+                    <input type="password" class="px-2 py-1" id="inp_reg_pwd2" equalto="inp_reg_pwd"
+                        ov-equalto:msg="Both passwords do not match" placeholder="Re-enter Password">
+                </div>
+                <div class="mt-100 d-flex align-items-center gap-2">
+                    <input type="checkbox" id="inp_terms" octavalidate="R"
+                        ov-required:msg="Please accept the terms and conditions">I accept the terms and conditions
+                </div>
+                <button type="submit" class="cs-primary-bg border-0 fw-semibold black-text fs-18 px-4 py-2 mt-2">Sign
+                    Up</button>
+                <div class="text-center">
+                    <p class="mt-2">Already have an account? <a href="./log-in.html">Log In</a></p>
+                </div>
+            </form>
+        </div>
+        <div id="alert_snackbar" class="alert-danger">
+            Light attracts bugs!
         </div>
     </main>
 
-    <footer></footer>
 
-
-
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="./../Js/index.js"></script>
+    <script src="./../Js/utils/formValidate.js"></script>
+    <script src="./../Js/utils/formValidationScript.js"></script>
 </body>
 
 </html>
