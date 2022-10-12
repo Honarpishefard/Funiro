@@ -4,11 +4,8 @@ import DatailsPageHandler from "./DatailsHandler.js";
 import cardHandler from "./cardHandler.js";
 import checkIfLogedIn from "./utils/checkLogedIn.js"
 
-const headerLogIn = document.getElementById("headerLogIn");
 
 let page = document.body.id;
-// const logedStatusLc = localStorage.getItem("logedStatus");
-// const userNameLc = localStorage.getItem("userName");
 
 switch (page) {
     case "homePage":
