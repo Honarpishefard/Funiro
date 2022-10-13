@@ -3,8 +3,6 @@ const userNameLc = localStorage.getItem("userName");
 
 const headerLogIn = document.getElementById("headerLogIn");
 
-
-
 export default function checkIfLogedIn() {
 
     if (logedStatusLc === "true") {
@@ -39,13 +37,12 @@ export default function checkIfLogedIn() {
         logOutBttn.addEventListener("click", () => {
             console.log("log out");
             localStorage.setItem("logedStatus", false);
+            localStorage.removeItem("userName")
             checkIfLogedIn();
             location. reload();
         });
 
         headerLogIn.appendChild(logOutDiv);
-
-
 
         headerLogIn.addEventListener("click", () => {
             if (logOutDiv.style.display === "none") {
@@ -53,13 +50,7 @@ export default function checkIfLogedIn() {
             } else {
                 logOutDiv.style.display = "none";
             }
-
-
-
         });
-
-
-
 
     };
 };
