@@ -1,3 +1,3 @@
 # Funiro
-furniture shopping website
-vanilla js
+furniture shopping website 
+- vanilla js
