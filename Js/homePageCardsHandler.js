@@ -1,6 +1,7 @@
 import homePageSource from "./../Js/DataBase/homePageDataBase.js"
 
 const productContainer = document.querySelector(".product-container");
+const shopNowBttn = document.getElementById("shopNowBttn");
 
 export default function homePageCardsHandler() {
     homePageSource().forEach((card) => {
@@ -17,4 +18,8 @@ export default function homePageCardsHandler() {
     </div>`
         productContainer.innerHTML += productcard;
     });
-}
+
+    shopNowBttn.addEventListener("click", () => {
+        location.href = "./product-list.html";
+    });
+};

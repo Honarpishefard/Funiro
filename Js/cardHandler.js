@@ -109,7 +109,17 @@ export default function cardHandler() {
     applyCouponBttn.addEventListener("click", discountHandler);
 
     checkoutBttn.addEventListener("click", () => {
-        console.log("ckeck out");
+
+        const checkLc = localStorage.getItem("userName");
+
+        if(checkLc){
+            document.body.innerHTML = `<div class="d-flex vh-100 justify-content-center flex-column align-items-center black-text">
+            <p class="fw-bolder display-6">Thank You For Choosing Us</p>
+            <a href="./home-page.html" class="fs-18 fw-semibold">Go Back To Home Page</a>
+            </div>`;
+        }else{
+            alert("Please sign up first!");
+        }
     });
 
 };
