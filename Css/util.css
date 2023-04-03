@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #D4AF8C;
+    --secondary-color: #FCF8F3;
+    --gray-color: #898989;
+    --black-color: #3A3A3A;
+}
+
+.fs-18 {
+    font-size: 1.125rem;
+}
+
+.fs-24 {
+    font-size: 1.5rem;
+}
+
+.fs-32{
+    font-size: 2rem;
+}
+
+.fs-36 {
+    font-size: 2.25rem;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.gap-2rem {
+    gap: 2rem;
+}
+
+.gap-6 {
+    gap: 4rem;
+}
+
+.ps-6 {
+    padding-left: 6rem;
+}
+
+.px-6 {
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+}
+
+.mt-6 {
+    margin-top: 5.5rem;
+}
+
+.mb-6 {
+    margin-bottom: 5.5rem;
+}
+
+.mx-6 {
+    margin-right: 5.5rem;
+    margin-left: 5.5rem;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-65 {
+    width: 65%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-webkit {
+    width: -webkit-fill-available;
+}
+
+.h-fit-content {
+    height: fit-content;
+}
+
+.cs-primary-bg {
+    background-color: var(--primary-color);
+}
+
+.cs-secondary-bg {
+    background-color: var(--secondary-color);
+}
+
+.gray-text {
+    color: var(--gray-color);
+}
+
+.black-text {
+    color: var(--black-color);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.left-20-negetive {
+    left: -20px;
+}
+
+.hover-effect:hover {
+    color: var(--gray-color);
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1 , maximum-scale=1" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../Css/home-page.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="" type="image">
+    <title>Funiro. | Furniture Shop</title>
+</head>
+
+<body id="homePage">
+    <header>
+        <div class="header-bg">
+            <div class="header-sm-bg">
+                <div class="d-flex align-items-center pt-4 pb-5 ps-6 min-vw-100 container">
+                    <div class="d-flex align-items-center flex-grow-1 gap-6">
+                        <a href="./home-page.html" id="logo" class="logo fs-24 fw-bold mb-0 cursor-pointer black-text text-decoration-none hover-effect">Funiro.</a>
+                        <a href="./product-list.html" class="fs-18 fw-500 mb-0 cursor-pointer black-text text-decoration-none header-products-sec hover-effect">Products</a>
+                        <p class="fs-18 fw-500 mb-0 cursor-pointer">Rooms</p>
+                        <p class="fs-18 fw-500 mb-0 cursor-pointer">Inspirations</p>
+                        <div class="bg-white w-40 d-flex align-items-center gap-2">
+                            <img src="./../Img/homepage/Ellipse.svg" class="ps-3" alt="">
+                            <input type="search" class="search-bar flex-grow-1 bg-transparent border-0 py-2 ps-2 w-75"
+                                placeholder="Search for minimalist chair">
+                        </div>
+                    </div>
+                    <div class="me-5 d-flex align-items-center gap-4">
+                        <img class="cursor-pointer" src="./../Img/homepage/Vector.svg" alt="">
+                        <a href="./shoppig-card.html">
+                            <img class="cursor-pointer" src="./../Img/homepage/Cart.svg" alt="">
+                        </a>
+                        <a href="./log-in.html" id="headerLogIn"
+                            class="mb-0 fs-18 fw-500 mb-0 cursor-pointer text-decoration-none black-text hover-effect">Log In</a>
+                    </div>
+                </div>
+
+                <!--Carousel-->
+                <div id="headerCarouselIndicators" class="carousel slide min-vw-100 mt-1" data-bs-ride="true">
+                    <div class="d-flex align-items-center position-absolute w-100">
+                        <div class="carousel-indicators gap-4 position-relative m-0 flex-grow-1 ms-5">
+                            <button type="button" data-bs-target="#headerCarouselIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#headerCarouselIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#headerCarouselIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="d-flex justify-content-end gap-3 me-5">
+                            <button class="carousel-control-prev position-relative d-flex" type="button"
+                                data-bs-target="#headerCarouselIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next position-relative d-flex" type="button"
+                                data-bs-target="#headerCarouselIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <img src="./../Img/homepage/slider pics/slider 1.png " class="d-block w-75" alt="...">
+                            <img src="./../Img/homepage/slider pics/slider 2.jpg" class="d-block w-75" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./../Img/homepage/slider pics/slider 2 CUT.jpg" class="d-block w-75" alt="...">
+                            <img src="./../Img/homepage/slider pics/slider 3.jpg" class="d-block w-75" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./../Img/homepage/slider pics/slider 3 CUT.png" class="d-block w-75" alt="...">
+                            <img src="./../Img/homepage/slider pics/slider 4.jpg" class="d-block w-75" alt="...">
+                        </div>
+                        <div class="sticky-header-box-top position-absolute w-30 p-5">
+                            <p class="display-5 fw-bolder black-text">High-Quality
+                                Furniture Just
+                                For You</p>
+                            <p style="color: #898989;" class="fw-500 fs-5 my-4">Our furniture is made from selected and
+                                best quality materials that are suitable for your dream home</p>
+                            <button id="shopNowBttn"
+                                class="header-shop-bttn cs-primary-bg border-0 w-100 black-text py-3 fs-18 fw-semibold">Shop
+                                Now</button>
+                        </div>
+                        <div class="sticky-header-box-bottom position-absolute px-3 py-4">
+                            <p class="fw-bold mb-2 fs-24">Bohauss</p>
+                            <p class="mb-2 fw-500">Luxury big sofa 2-seat</p>
+                            <div class="d-flex align-items-center cursor-pointer">
+                                <p class="mb-2 fs-5 fw-semibold flex-grow-1">Rp 17.000.000</p>
+                                <img src="./../Img/homepage/XMLID 1522.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container d-flex justify-content-around align-items-center p-0 mt-6 mb-5">
+            <div class="d-flex gap-4">
+                <img src="./../Img/homepage/High Quality.svg" alt="">
+                <div>
+                    <p class="mb-1 fw-semibold fs-18">High Quality</p>
+                    <p class="mb-0 fw-500 fs-6">crafted from top materials</p>
+                </div>
+            </div>
+            <div class="d-flex gap-4">
+                <img src="./../Img/homepage/Warrany Protection.svg" alt="">
+                <div>
+                    <p class="mb-1 fw-semibold fs-18">Warrany Protection</p>
+                    <p class="mb-0 fw-500 fs-6">Over 2 years</p>
+                </div>
+            </div>
+            <div class="d-flex gap-4">
+                <img src="./../Img/homepage/Free Shipping.svg" alt="">
+                <div>
+                    <p class="mb-1 fw-semibold fs-18">Free Shipping</p>
+                    <p class="mb-0 fw-500 fs-6">Order over 150 $</p>
+                </div>
+            </div>
+            <div class="d-flex gap-4">
+                <img src="./../Img/homepage/24  7 Support.svg" alt="">
+                <div>
+                    <p class="mb-1 fw-semibold fs-18">24 / 7 Support</p>
+                    <p class="mb-0 fw-500 fs-6">Dedicated support</p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <h2 class="fw-bold fs-36 mt-5 black-text">Our Products</h2>
+        </div>
+
+
+        <div class="product-container d-flex gap-2rem row justify-content-center mt-4 container mx-auto">
+
+            <!--js product cards created here-->
+
+        </div>
+        <div class="d-flex justify-content-center my-5">
+            <a href="./product-list.html"
+                class="show-more-product-bttn fs-6 fw-semibold bg-transparent px-6 py-2 text-decoration-none hover-effect">Show
+                More</a>
+        </div>
+        <div class="cs-secondary-bg d-flex">
+            <div class="flex-grow-1">
+                <div class="inspo-sec-tittle d-flex flex-column justify-content-center ms-5">
+                    <p class="fw-bold display-6 black-text">50+ Beautiful rooms
+                        inspiration</p>
+                    <p class="gray-text fw-500 fs-6">Our designer already made a lot of beautiful prototipe of rooms
+                        that
+                        inspire you</p>
+                    <div>
+                        <button class="fw-semibold fs-6 text-white cs-primary-bg border-0 px-5 py-3">Explore
+                            More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Carousel-->
+            <div id="secondeCarouselIndicators" class="carousel slide mt-4 me-5" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#secondeCarouselIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#secondeCarouselIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#secondeCarouselIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item float-none active">
+                        <img src="./../Img/homepage/second-slider-pics/Rectangle 24.jpg" class="d-block " width="404px"
+                            height="582px" alt="...">
+                    </div>
+                    <div class="carousel-item float-none">
+                        <img src="./../Img/homepage/second-slider-pics/Rectangle 25.jpg" class="d-block " width="404px"
+                            height="582px" alt="...">
+                    </div>
+                    <div class="carousel-item float-none">
+                        <img src="./../Img/homepage/second-slider-pics/1f137b7dba9efb47d119d0715674a767.jpg"
+                            width="404px" height="582px" class="d-block " alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#secondeCarouselIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#secondeCarouselIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!---->
+
+        </div>
+
+        <div class="d-flex justify-content-center mt-6">
+            <p class="display-6 fw-bold black-text">Catagories</p>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center gap-5 mt-4">
+            <div class="row container m-auto">
+                <div class="d-flex gap-6 justify-content-center align-items-end">
+                    <a href="./product-list.html" onclick="localStorage.setItem('page', 'bathroom')" class="col-8 text-dark h-fit-content position-relative cursor-pointer">
+                        <p class="fs-36 fw-bold position-absolute bottom-0 catagory-img-lg left-20-negetive">Our Latest
+                            Bath Collection</p>
+                        <img src="./../Img/homepage/catagories/001 (1).jpg" class="w-webkit" width="" height="" alt="">
+                    </a>
+                    <a href="./product-list.html" onclick="localStorage.setItem('page', 'lighting')" class="col-3 text-dark h-fit-content position-relative cursor-pointer">
+                        <p class="fs-36 fw-bold position-absolute bottom-0 catagory-img-sm left-20-negetive">Shop For
+                            Lighting</p>
+                        <img src="./../Img/homepage/catagories/Modern-Hanging-Lights.jpg" class="w-webkit" width=""
+                            height="" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row container m-auto">
+                <div class="d-flex gap-6 justify-content-center align-items-end">
+                    <a href="./product-list.html" onclick="localStorage.setItem('page', 'decor')" class="col-3 text-dark h-fit-content position-relative cursor-pointer">
+                        <p class="fs-36 fw-bold position-absolute bottom-0 catagory-img-sm left-20-negetive">Modern &
+                            Minimalistic</p>
+                        <img src="./../Img/homepage/catagories/Abstract-Ink-Painting-on-Canvas.jpg" class="w-webkit"
+                            width="" height="" alt="">
+                    </a>
+                    <a href="./product-list.html" onclick="localStorage.setItem('page', 'bedroom')" class="col-8 text-dark h-fit-content position-relative cursor-pointer">
+                        <p class="fs-36 fw-bold position-absolute bottom-0 catagory-img-lg left-20-negetive">Experience
+                            The best Sleep</p>
+                        <img src="./../Img/homepage/catagories/bed.jpg" class="w-webkit" width="" height="" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center mt-6">
+            <p class="gray-text fw-semibold">Share your setup with</p>
+            <p class="black-text fw-bold display-6">#FuniroFurniture</p>
+        </div>
+        <div class="d-flex flex-wrap align-items-center gap-3 mb-6 justify-content-center">
+            <div class="d-flex flex-column gap-3">
+                <div class="d-flex gap-3 align-items-end">
+                    <img src="./../Img/homepage/FuniroFurniture-sec/Rectangle 36.jpg" alt="">
+                    <img src="./../Img/homepage/FuniroFurniture-sec/Rectangle 38.jpg" alt="">
+                </div>
+                <div class="d-flex gap-3 align-items-start">
+                    <img src="./../Img/homepage/FuniroFurniture-sec/Rectangle 37.jpg" alt="">
+                    <img src="./../Img/homepage/FuniroFurniture-sec/Rectangle 39.jpg" alt="">
+                </div>
+            </div>
+            <img src="./../Img/homepage/FuniroFurniture-sec/Rectangle 40.jpg" alt="">
+            <diV class="d-flex flex-column gap-3">
+                <div class="d-flex gap-3 align-items-end">
+                    <img src="./../Img/homepage/FuniroFurniture-sec/Rectangle 43.jpg" alt="">
+                    <img src="./../Img/homepage/FuniroFurniture-sec/Rectangle 45.jpg" alt="">
+                </div>
+                <div class="d-flex gap-3 align-items-start">
+                    <img src="./../Img/homepage/FuniroFurniture-sec/Rectangle 41.jpg" alt="">
+                    <img src="./../Img/homepage/FuniroFurniture-sec/Rectangle 44.jpg" alt="">
+                </div>
+            </diV>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top-border mx-6"></div>
+        <div class="container d-flex justify-content-evenly my-5">
+            <div class="d-flex flex-column gap-2" style="max-width: 270px;">
+                <p class="text-black fw-bold fs-24 mb-0">Funiro.</p>
+                <p class="mb-0 gray-text fw-normal fs-6">Worldwide furniture store since 2020. We sell over 1000+
+                    branded
+                    products on our website</p>
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./../Img/homepage/footer/Subtract.svg" alt="">
+                    <p class="mb-0 gray-text fw-normal fs-6">Sawojajar Malang, Indonesia</p>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./../Img/homepage/footer/Vector.svg" alt="">
+                    <p class="mb-0 gray-text fw-normal fs-6">+6289 456 3455</p>
+                </div>
+                <p class="mb-0 gray-text fw-normal fs-6">www.funiro.com</p>
+            </div>
+            <div class="d-flex flex-column gap-2" style="max-width: 270px;">
+                <p class="text-black fw-bold fs-24 mb-0">Menu</p>
+                <p class="mb-0 gray-text fw-normal fs-6">Products</p>
+                <p class="mb-0 gray-text fw-normal fs-6">Rooms</p>
+                <p class="mb-0 gray-text fw-normal fs-6">Inspirations</p>
+                <p class="mb-0 gray-text fw-normal fs-6">About Us</p>
+                <p class="mb-0 gray-text fw-normal fs-6">Terms & Policy</p>
+            </div>
+            <div class="d-flex flex-column gap-2" style="max-width: 270px;">
+                <p class="text-black fw-bold fs-24 mb-0">Account</p>
+                <p class="mb-0 gray-text fw-normal fs-6">My Account</p>
+                <p class="mb-0 gray-text fw-normal fs-6">Checkout</p>
+                <p class="mb-0 gray-text fw-normal fs-6">My Cart</p>
+                <p class="mb-0 gray-text fw-normal fs-6">My catalog</p>
+            </div>
+            <div class="d-flex flex-column gap-2" style="max-width: 270px;">
+                <p class="text-black fw-bold fs-24 mb-0">Stay Connected</p>
+                <p class="mb-0 gray-text fw-normal fs-6">Facebook</p>
+                <p class="mb-0 gray-text fw-normal fs-6">Instagram</p>
+                <p class="mb-0 gray-text fw-normal fs-6">Twitter</p>
+            </div>
+            <div class="d-flex flex-column gap-2" style="max-width: 270px;">
+                <p class="text-black fw-bold fs-24 mb-0">Stay Updated</p>
+                <div class="d-flex gap-2">
+                    <input type="email" placeholder="Enter your email" class="email-input-footer px-2 py-2">
+                    <img src="./../Img/homepage/footer/Vector 1.svg" class="email-img-footer" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./../Js/index.js"></script>
+</body>
+
+</html>
